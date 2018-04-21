@@ -1,0 +1,17 @@
+service:  assesment-tracker-app-skill-services
+frameworkVersion: "=1.26.1"
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-east-1
+  profile: default
+  versionFunctions: false
+  
+
+functions:
+  assesment-tracker-app-skill-services:
+    handler: handler.handler
+    name: assesment-tracker-app-skill-services
+    events:
+      - alexaSkill
